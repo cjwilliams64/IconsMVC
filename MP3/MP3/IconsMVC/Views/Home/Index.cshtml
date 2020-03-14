@@ -1,0 +1,37 @@
+﻿@model Icons
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="container">*@
+@*@foreach (Icons icon in Model)
+    {*
+    <div class="cell cell-1">a</div>
+    <div class="cell cell-2">b</div>
+    <div class="cell cell-3">c</div>
+    <div class="cell cell-4">d</div>
+    <div class="cell cell-5">e</div>
+    <div class="cell cell-6">f</div>
+    <div class="cell cell-7">g</div>
+    <div class="cell cell-8">h</div>
+    <div class="cell cell-9">a</div>
+    <div class="cell cell-10">b</div>
+    <div class="cell cell-11">c</div>
+    <div class="cell cell-12">d</div>
+    <div class="cell cell-13">e</div>
+    <div class="cell cell-14">f</div>
+    <div class="cell cell-15">g</div>
+    <div class="cell cell-16">h</div>
+    @*}*@
+@*</div>*@
+
+<div class="container">
+    @for (int i = 0; i < 16; i++)
+    {
+        <div class="cell">@(Model.RandomList[i])</div>
+    }
+</div>
+
+
+
+@*This will be a foreach loop later on...*@
